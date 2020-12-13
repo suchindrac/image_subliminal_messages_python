@@ -10,10 +10,27 @@ This is a small utility that helps embed 1000s of characters of text in an image
 # Execution
 
 ```bash
-suchindra@suchindra-B250M-DS3H:~/src/image_subliminals$ python image_subliminals.py
+suchindra@suchindra-B250M-DS3H:~/src/image_subliminals/image_subliminal_messages_python$ python image_subliminals.py -h
 usage: image_subliminals.py [-h] -m MESSAGES_FILE -i IMAGE_FILE -t TEXT_OPACITY [-r] [-f FONT_FAMILY] [-s FONT_SIZE] [-c TEXT_COLOR]
                             [-o OUTPUT_FILE]
-image_subliminals.py: error: the following arguments are required: -m/--messages_file, -i/--image_file, -t/--text_opacity
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -m MESSAGES_FILE, --messages_file MESSAGES_FILE
+                        File containing messages
+  -i IMAGE_FILE, --image_file IMAGE_FILE
+                        Image file
+  -t TEXT_OPACITY, --text_opacity TEXT_OPACITY
+                        Text opacity
+  -r, --invert          Invert image?
+  -f FONT_FAMILY, --font_family FONT_FAMILY
+                        Text font family
+  -s FONT_SIZE, --font_size FONT_SIZE
+                        Font size
+  -c TEXT_COLOR, --text_color TEXT_COLOR
+                        Text color
+  -o OUTPUT_FILE, --output_file OUTPUT_FILE
+                        Output file
 suchindra@suchindra-B250M-DS3H:~/src/image_subliminals$
 suchindra@suchindra-B250M-DS3H:~/src/image_subliminals$ python image_subliminals.py -m msgs.txt -i nature.jpg -t 30 \
  -f "DejaVuSansMono.ttf" -s 20 -r
